@@ -8,7 +8,7 @@ LunchCheckController.$inject(['$scope']);
 function LunchCheckController($scope) {
   $scope.dishes = "";
   $scope.message = "";
-  $scope.messageColor = "green";
+  $scope.messageColor = "";
   $scope.processDishes = function() {
 
     if (!$scope.dishes) { // empty/undefined
