@@ -7,7 +7,7 @@
   .service("ShoppingListCheckOffService", ShoppingListCheckOffService);
 
   // ToBuyController
-  ToBuyController.$inject(ShoppingListCheckOffService)
+  ToBuyController.$inject = ['ShoppingListCheckOffService'];
   function ToBuyController(ShoppingListCheckOffService) {
     var ctrl = this;
 
@@ -19,7 +19,7 @@
   }
 
   // AlreadyBoughtController
-  AlreadyBoughtController.$inject(ShoppingListCheckOffService)
+  AlreadyBoughtController.$inject = ['ShoppingListCheckOffService'];
   function AlreadyBoughtController(ShoppingListCheckOffService) {
     var ctrl = this;
 
